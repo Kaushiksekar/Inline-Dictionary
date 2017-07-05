@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#60001b"
+    >
+<item android:drawable="@drawable/my_button_background" />
+</ripple>

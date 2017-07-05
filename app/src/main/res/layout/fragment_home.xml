@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:clipToPadding="false"
+    tools:context="com.d.wordsearch.HomeFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_edit_text"
+        android:maxLines="1"
+        android:hint="@string/hint_search_field"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_margin="10dp"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:theme="@style/LinearProgress"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/word_search_button"
+            android:text="@string/button_word_search"
+            android:background="@drawable/ripple"
+            style="@style/ButtonAppearance"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other_search_button"
+            android:text="@string/button_other_search"
+            android:background="@drawable/ripple"
+            style="@style/ButtonAppearance"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
